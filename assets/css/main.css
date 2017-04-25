@@ -127,7 +127,7 @@ nav{
 .contentMain{
   display: inline-block;
   width: auto;
-  padding:0.01em 16px;  
+  padding:0.01em 16px;
   margin-top:16px;
   margin-bottom:16px;
   font-size:18px;
@@ -237,15 +237,23 @@ nav{
 }
 
 /*Contactanos*/
+.container-form{
+  display: inline-block;
+  position: relative;
+}
+
 #contactanos{
   position: relative;
   height: 400px
 }
 #map{
+  display: inline-block;
   width:400px;
   height: 300px;
   right: 20px;
   position: absolute;
+  right: 20px;
+  top: 20px;
 }
 
 /*Footer*/
@@ -330,5 +338,3 @@ nav{
   padding-bottom: 30px;
 }
 /*FINISH*/
-
-

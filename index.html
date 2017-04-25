@@ -10,7 +10,7 @@
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
-  <title>Create Image</title>
+  <title>Grerian - Tienda Virtual</title>
 </head>
 <body>
   <header>
@@ -27,7 +27,7 @@
         <li class="item-opcion"><a href="#portada" class="link-item">Inicio</a></li>
         <li class="item-opcion"><a href="#somos" class="link-item">Quiénes Somos</a></li>
         <li class="item-opcion"><a href="#" class="link-item">Ropa</a></li>
-        <li class="item-opcion"><a href="#" class="link-item">Contáctanos</a></li>
+        <li class="item-opcion"><a href="#contactanos" class="link-item">Contáctanos</a></li>
       </ul>
     </nav>
   </header>
@@ -36,7 +36,7 @@
       <img src="assets/catalogo/compra.jpg" class="slide">
       <img src="assets/catalogo/ropamujer.jpg" class="slide">
       <img src="assets/catalogo/verano.jpg" class="slide">
-      
+
       <div class="contentMain">
         <div id="arrows">
            <div class="left" onclick="plusDivs(-1)">&#10094;</div>
@@ -62,10 +62,10 @@
          <span class="costo">S/30.00</span>
          <span class="star-rating">
             <span>&#9733;</span>
-            <span>&#9733;</span> 
-            <span>&#9733;</span> 
-            <span>&#9733;</span> 
-            <span>&#9733;</span> 
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
           </span>
        </div>
       </div>
@@ -78,10 +78,10 @@
          <span class="costo">S/60.00</span>
          <span class="star-rating">
             <span>&#9733;</span>
-            <span>&#9733;</span> 
-            <span>&#9733;</span> 
-            <span>&#9733;</span> 
-            <span>&#9733;</span> 
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
           </span>
        </div>
       </div>
@@ -94,10 +94,10 @@
          <span class="costo">S/85.00</span>
          <span class="star-rating">
             <span>&#9733;</span>
-            <span>&#9733;</span> 
-            <span>&#9733;</span> 
-            <span>&#9733;</span> 
-            <span>&#9733;</span> 
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
           </span>
        </div>
       </div>
@@ -110,10 +110,10 @@
          <span class="costo">S/120.00</span>
          <span class="star-rating">
             <span>&#9733;</span>
-            <span>&#9733;</span> 
-            <span>&#9733;</span> 
-            <span>&#9733;</span> 
-            <span>&#9733;</span> 
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
           </span>
        </div>
       </div>
@@ -126,10 +126,10 @@
          <span class="costo">S/120.00</span>
          <span class="star-rating">
             <span>&#9733;</span>
-            <span>&#9733;</span> 
-            <span>&#9733;</span> 
-            <span>&#9733;</span> 
-            <span>&#9733;</span> 
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
           </span>
        </div>
       </div>
@@ -142,10 +142,10 @@
          <span class="costo">S/120.00</span>
          <span class="star-rating">
             <span>&#9733;</span>
-            <span>&#9733;</span> 
-            <span>&#9733;</span> 
-            <span>&#9733;</span> 
-            <span>&#9733;</span> 
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
           </span>
        </div>
       </div>
@@ -158,10 +158,10 @@
          <span class="costo">S/120.00</span>
          <span class="star-rating">
             <span>&#9733;</span>
-            <span>&#9733;</span> 
-            <span>&#9733;</span> 
-            <span>&#9733;</span> 
-            <span>&#9733;</span> 
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
           </span>
        </div>
       </div>
@@ -174,23 +174,49 @@
          <span class="costo">S/120.00</span>
          <span class="star-rating">
             <span>&#9733;</span>
-            <span>&#9733;</span> 
-            <span>&#9733;</span> 
-            <span>&#9733;</span> 
-            <span>&#9733;</span> 
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
           </span>
        </div>
       </div>
     </div>
     <div id="boxMasvistos">
-      
+
     </div>
   </section>
   <section id="contactanos">
-    <div id="formContact">
-        <form>
-          <label></label>
-        </form>
+    <div class="container-form">
+      <form class="form-contact">
+        <h2 id="text-form">
+          GRERIAN
+        </h2>
+        <div class="name-contact">
+          <input type="text" id="name" class="form-contact" placeholder="Ingrese su nombre">
+          <span id="msja"></span>
+        </div>
+        <div class="lastname-contact">
+          <input type="text" id="lastname" class="form-contact" placeholder="Ingrese su apellido">
+          <span id="msjb"></span>
+        </div>
+        <div class="email-contact">
+          <input type="email" id="input-email" class="form-contact" placeholder="Ingrese su correo electrónico">
+          <span id="msjc"></span>
+        </div>
+        <div class="input-group">
+          <div class="input-group-addon">@</div>
+          <input type="text" id="input-social" class="form-contact" placeholder="Facebook">
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" value="remember-me">
+            <span>Deseo recibir información vía email</span>
+          </label>
+        </div>
+        <button class="btn btn-lg btn-primary" type="submit">Enviar información</button>
+        <br>
+        <div id="msj"></div>
+      </form>
     </div>
     <div id="map"></div>
   </section>
@@ -287,7 +313,7 @@
             <a href="">
               <span class="sprite sprite-ft-pago5"></span>
             </a>
-          </li> 
+          </li>
           <li>
             <a href="">
               <span class="sprite sprite-ft-pago1"></span>
@@ -306,7 +332,7 @@
       </div>
     </section>
   </footer>
-  <script src="http://maps.googleapis.com/maps/api/js"> </script>
+  <script src="http://maps.googleapis.com/maps/api/js"></script>
   <script type="text/javascript" src="assets/js/app.js"></script>
 </body>
 </html>
