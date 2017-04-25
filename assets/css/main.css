@@ -288,17 +288,34 @@ nav{
   width: 300px;
   margin: 5px 0;
   font-size: 18px;
-  padding: 10px;
+  padding: 5px;
+}
+
+.box-social{
+  display: inline-block;
+  border-radius: 5px;
+  border: 1px solid rgb(187, 27, 70);
+  width: 300px;
+  margin: 5px 0;
+  font-size: 18px;
+  padding: 0;
 }
 
 #social{
   display: inline-block;
   margin: 0;
   width: 30px;
+  background-color: rgb(44, 0, 170);
+  color: white;
+  font-weight: 900;
+  padding-left: 10px;
+  font-size: 21px;
+  border: none;
 }
 
 #input-social{
   border: none;
+  width: 260px;
 }
 
 /*contenedor mapa*/
