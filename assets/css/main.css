@@ -321,6 +321,36 @@ nav{
   border: 1px solid rgb(252, 155, 129);
 }
 
+#msj {
+  font-weight: bold;
+  color:#7B241C;
+  font-size: 14px;
+}
+
+.span-msj{
+  display: inline-block;
+  background-color: rgba(172, 13, 13, 0.8);
+  padding: 5px;
+  position: relative;
+  left: 5px;
+  top: -5px;
+  width: 250px;
+  font-size: 14px;
+  color: white;
+}
+
+.box-contact span:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-right: 10px solid rgba(51,51,51,0.8);
+  border-bottom: 5px solid transparent;
+  position: absolute;
+  right: 100%;
+  top: 10px;
+}
+
 /*Footer*/
 .footer {
   display: block;
