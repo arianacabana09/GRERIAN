@@ -25,3 +25,15 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " slideShow";
 }
+
+
+ function init(){
+        var mapOption = {
+         center: new google.maps.LatLng(-12.1189618,-77.040862),
+         zoom: 5,
+         mapTypeId:google.maps.MapTypeId.ROADMAP
+        };
+    var map = new google.maps.Map(document.getElementById("map"),mapOption);
+ 
+ }
+google.maps.event.addDomListener(window, 'load', init);

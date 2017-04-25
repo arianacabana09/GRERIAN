@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: auto;
 }
+
 body{
   background-color: #FFFFFF;
   margin: 0;
@@ -9,23 +10,39 @@ body{
   font-family: 'Josefin Sans';
 }
 
-header{
-  top: 0;
-  background-color: #E91E63;
-  width: 100%;
-  height: 120px;
+#singin{
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  cursor: pointer;
+}
+
+#singin a{
+  text-decoration: none;
+  color: white;
+}
+
+#singin a:hover{
+  color: #CB4480;
+}
+/**/
+#view{
+  background-color: #F3CCA0;
+  height: 50px;
 }
 
 #logo{
-  font-size: 63px;
-  text-align: center;
+  font-size: 6rem;
+  position: absolute;
   font-family: 'Lobster Two', cursive;
+  left: 40px;
 }
 
 nav{
   text-align: center;
-  height: 30px;
-  background-color: #EE6E73;
+  background-color: #F1845F;
+  bottom: 0px;
+  height: 50px;
 }
 
 .item-opcion{
@@ -59,7 +76,7 @@ nav{
 
 .contentSlide img{
    width: 100%;
-   height: 700px;
+   height: 600px;
 }
 
 .slide{
@@ -136,6 +153,8 @@ nav{
 
 #dots{
   position: absolute;
+  background-color: red;
+  z-index: 1000;
   margin: auto;
   right: 650px;
   bottom: 40px;
@@ -143,18 +162,173 @@ nav{
 
 /*Gallery*/
 #gallery{
-  border:1px solid black;
   width: 100%;
-  height: 700px;
-  position: relative;
-  margin-top: 100px;
+  border:1px solid green;
+  height: 1000px;
+  text-align: center;
 }
+
+#boxproducto{
+  width: 90%;
+  height: 380px;
+  margin-top: 20px;
+  position: absolute;
+  left: 80px;
+}
+
+.contentImage{
+  position: relative;
+  width: 250px;
+  height: 370px;
+  text-align: center;
+  margin: 0;
+  display: inline-block;
+  margin-right: 25px;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.contentImage:hover{
+  -webkit-box-shadow: -2px -2px 32px -1px rgba(158,158,158,1);
+  -moz-box-shadow: -2px -2px 32px -1px rgba(158,158,158,1);
+  box-shadow: -2px -2px 32px -1px rgba(158,158,158,1);
+}
+.p-image{
+  display: inline-block;
+  width: 100%;
+  height: 270px;
+}
+
+.p-image img{
+  width: 100%;
+  height: 100%;
+}
+
+.descr-product{
+  width: 100%;
+  height: 100px;
+  display: inline-block;
+  font-size: 2rem;
+  position: relative;
+}
+
+.star-rating{
+  position: absolute;
+  right: 0px;
+}
+
+.descr-product .star-rating span{
+    text-decoration: none;
+    color: #f9e718;
+}
+
+.descr-product .costo{
+    position: absolute;
+    left: 5px;
+    margin-right: 50px;
+}
+
+.costo, .star-rating{
+  margin-top: 10px;
+}
+.inf-product{
+  text-align: left;
+  margin: 5px 0 0 5px;
+}
+
+/*Contactanos*/
+#contactanos{
+  position: relative;
+  height: 400px
+}
+#map{
+  width:400px;
+  height: 300px;
+  right: 20px;
+  position: absolute;
+}
+
 /*Footer*/
 .footer {
-  position: fixed;
-  width: 100%;
-  right: 0;
-  bottom: 0;
-  padding: 20px;
-  background-color: #E91E63;
+  padding: 25px 10px 15px 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #F1845F;
+  border-bottom: 1px solid #d9d9d9;
 }
+.footer .footer-pago {
+  padding: 25px 10px 15px 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 1px solid #d9d9d9;
+}
+.footer .footer-pago:before,
+.footer .footer-pago:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.footer .footer-pago .f-cnt-menu {
+  width: 58%;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0;
+}
+.footer .footer-pago .f-item {
+  width: 33.3%;
+  display: inline-block;
+  vertical-align: top;
+}
+.footer .footer-pago .f-item a {
+  font-size: 1.5rem;
+  color:  white;
+  text-decoration: none;
+}
+.footer .footer-pago .f-item a:hover {
+  text-decoration: underline;
+}
+.footer .footer-pago h2 {
+  font-size: 2rem;
+  color: #000;
+  margin-left: 35px;
+}
+
+/*footer metodos de pago*/
+.footer .footer-pago .f-pago {
+  max-width: 240px;
+  float: right;
+  padding-left: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.footer .footer-pago .f-pago h2 {
+  margin-bottom: 15px;
+}
+.footer .footer-pago .f-pago ul {
+  text-align: left;
+}
+.footer .footer-pago .f-pago li{
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 7px;
+  margin-bottom: 3px;
+}
+.footer .f-copy {
+   overflow: hidden;
+  font-size: 13px;
+  background: #F1845F;
+}
+.footer .f-copy .inner-copy {
+  padding: 12px 25px;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-bottom: 30px;
+}
+/*FINISH*/
+
+
