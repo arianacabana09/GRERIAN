@@ -121,11 +121,12 @@ enviar.onclick = function() {
     var expresion = /^9[\d]{8}$/;
 
     if (isNaN(phone.value) || !expresion.test(phone.value)){
-      msg.innerText = "Debe ingresar un número con el formato correcto";
+      msg.innerText = "Debe ingresar un número con el formato correcto \n ej: 987654321";
       return phone.focus();
     } else{
       msg.innerText = "";
       msg.style.display = "none";
+      msje.style.color = "rgb(241, 27, 97)";
       msje.innerText = "Gracias por su visita :)";
     }
   }
