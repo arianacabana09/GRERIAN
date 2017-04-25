@@ -25,25 +25,32 @@
     </nav>
   </header>
   <section id="portada">
-    <div class="container">
+    <div class="contentSlide">
+      <img src="assets/catalogo/compra.jpg" class="slide">
+      <img src="assets/catalogo/ropamujer.jpg" class="slide">
+      <img src="assets/catalogo/verano.jpg" class="slide">
+      
+      <div class="contentMain">
+        <div id="arrows">
+           <div class="left" onclick="plusDivs(-1)">&#10094;</div>
+           <div class="rigth" onclick="plusDivs(1)">&#10095;</div>
+        </div>
+        <div id="dots">
+          <span class="circle badge dot" onclick="currentDiv(1)"></span>
+          <span class="circle badge dot" onclick="currentDiv(2)"></span>
+          <span class="circle badge dot" onclick="currentDiv(3)"></span>
+        </div>
+      </div>
     </div>
   </section>
-  <section id="somos">
-    <h2>¿Quiénes Somos?</h2>
-    <div class="container-somos">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus impedit incidunt rerum ducimus quibusdam adipisci quas reprehenderit saepe, debitis natus, odit voluptatum! Debitis sit modi, ea rem. Eos, ullam, quia.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
-  </section>
-  <section id="producto">
+  <section id="gallery">
     <div class="box'producto">
 
     </div>
   </section>
-  <footer class="footer">
+ <!-- <footer class="footer">
     <p>&copy </p>
-  </footer>
+  </footer>-->
+  <script type="text/javascript" src="assets/js/app.js"></script>
 </body>
 </html>
