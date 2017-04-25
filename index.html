@@ -8,27 +8,53 @@
   <link rel="icon" type="image/ico" href="assets/img/icon.ico">
   <link href="https://fonts.googleapis.com/css?family=Lobster+Two|Josefin+Sans" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
-  <title>Create Image</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/fonts/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title>Greriam</title>
 </head>
 <body>
   <header>
-    <div id="view">
-      <div id="logo">
-        Grerian
+      <nav class="navbar navbar-default" role="navigation" style="background: none; border: none; margin-bottom: 0px">
+        <div id="contnav"></div>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse"
+          data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Desplegar navegación</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+        <a class="navbar-brand" href="#"><img src="assets/img/logo2.png" id="logo"></a>
       </div>
-      <div id="singin">
-          <a>INICIAR SESIÓN</a>
+      <div class="collapse navbar-collapse navbar-ex1-collapse" style="background-color: #F3CCA0 ;border:none;">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">CONTACTANOS</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              CAMPAÑAS<b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu" style="width: 500px">
+              <li><a href="#">Otoño</a></li>
+              <li><a href="#">Invierno</a></li>
+              <li><a href="#">Verano</a></li>
+              <li><a href="#">Primavera</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Mostras más...</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">OTRO MENU</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#">INICIO</a></li>
+        </ul>
       </div>
-    </div>
-    <nav id="items">
-      <ul>
-        <li class="item-opcion"><a href="#portada" class="link-item">Inicio</a></li>
-        <li class="item-opcion"><a href="#somos" class="link-item">Quiénes Somos</a></li>
-        <li class="item-opcion"><a href="#" class="link-item">Ropa</a></li>
-        <li class="item-opcion"><a href="#" class="link-item">Contáctanos</a></li>
-      </ul>
     </nav>
   </header>
   <section id="portada">
@@ -187,16 +213,12 @@
     </div>
   </section>
   <section id="contactanos">
-    <div id="formContact">
-        <form>
-          <label></label>
-        </form>
     </div>
     <div id="map"></div>
   </section>
   <footer class="footer">
-    <section class="footer-pago">
-    <div class="f-cnt-menu">
+    <section class="footer-pago container">
+    <div class="f-cnt-menu row">
       <div class="f-item">
         <h2>Sobre Grerian</h2>
         <ul>
@@ -266,44 +288,31 @@
         </ul>
       </div>
     </div>
-      <div class="f-pago">
-        <h2>Métodos de pago</h2>
-        <ul>
-          <li>
-            <a href="">
-              <span class="sprite sprite-ft-pago2"></span>
-            </a>
-          </li>
-          <li>
-            <a href=""><span class="sprite sprite-ft-pago3"></span>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <span class="sprite sprite-ft-pago4"></span>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <span class="sprite sprite-ft-pago5"></span>
-            </a>
-          </li> 
-          <li>
-            <a href="">
-              <span class="sprite sprite-ft-pago1"></span>
-            </a>
-          </li>
-        </ul>
-      </div>
+    <div class="f-pago col-lg-4  col-md-4 col-sm-6 col-xs-12 ">
+    <h3> Síguenos</h3>
+      <ul class="social">
+        <li> <a href="#"> <i class="fa icon-youtube-with-circle"> </i> </a> </li>
+        <li> <a href="#"> <i class="fa icon-twitter-with-circle">  </i> </a> </li>
+        <li> <a href="#"> <i class="fa icon-mail4">  </i> </a> </li>
+        <li> <a href="#"> <i class="fa icon-facebook-with-circle">  </i> </a> </li>
+      </ul>
+    </div>
+    </section>
     </section>
     <section class="f-copy">
-       <div class="f-copy-left">
-        <p> TODOS LOS DERECHOS RESERVADOS <span>2017</span>.
-        </p>
-      </div>
-      <div class="f-copy-right">
-        <a href="">Diseño web <strong>Grerian</strong></a>
-      </div>
+       <div class="footer-bottom">
+        <div class="container">
+            <p> Copyright © Grerian 2017. All right reserved Magrian.</p>
+            <div class="pull-right">
+                <ul class="nav nav-pills payments">
+                  <li><i class="sprite sprite-ft-pago1"></i></li>
+                    <li><i class="sprite sprite-ft-pago5"></i></li>
+                    <li><i class="sprite sprite-ft-pago4"></i></li>
+                    <li><i class="sprite sprite-ft-pago3"></i></li>
+                </ul> 
+            </div>
+        </div>
+    </div>
     </section>
   </footer>
   <script src="http://maps.googleapis.com/maps/api/js"> </script>

@@ -1,88 +1,56 @@
 *{
   box-sizing: border-box;
   margin: auto;
-}
-
-body{
-  background-color: #FFFFFF;
-  margin: 0;
-  padding: 0;
   font-family: 'Josefin Sans';
 }
-
-#singin{
-  position: absolute;
-  right: 20px;
-  top: 10px;
-  cursor: pointer;
+body{
+  background-color: #F9DFD5;
+  margin: 0;
+  padding: 0;
 }
-
-#singin a{
-  text-decoration: none;
-  color: white;
-}
-
-#singin a:hover{
-  color: #CB4480;
-}
-/**/
-#view{
+header{
   background-color: #F3CCA0;
-  height: 50px;
+  z-index: 1000;
+  margin: 0;
 }
-
-#logo{
-  font-size: 6rem;
-  position: absolute;
-  font-family: 'Lobster Two', cursive;
-  left: 40px;
-}
-
 nav{
   text-align: center;
-  background-color: #F1845F;
   bottom: 0px;
-  height: 50px;
+  height: 80px;
 }
-
-.item-opcion{
+#contnav{
+  height: 30px;
+}
+#logo{
+  width: 170px;
+  height: 80px;
+  position: absolute;
+  left: 40px;
+  bottom: 10px;
+  top: 10px;
+}
+#buscar{
   display: inline-block;
+  background-color: #F3CCA0;
 }
-
-.link-item{
-  text-decoration: none;
-  font-size: 15px;
-  padding-left: 50px;
-  color: rgb(255, 255, 255);
-  top: 20px;
-}
-.link-item:hover{
-  color: #757575;
-}
-
 #portada{
   width: 100%;
   height: 600px;
   margin: 0;
   padding: 0;
 }
-
 /*Slides Images*/
 .contentSlide {
-  max-width:100%;
+  width: 100%;
   margin:auto;
-  position: relative;
 }
-
 .contentSlide img{
    width: 100%;
    height: 600px;
 }
-
 .slide{
   display: none;
 }
-
 .circle{
   border-radius: 50%;
   border-color: white;
@@ -94,28 +62,23 @@ nav{
   padding-right:8px;
   text-align:center;
 }
-
 .circle:hover{
   color:#000;
   background-color:#fff;
 }
-
 .badge{
   height:13px;
   width:13px;
   padding:0;
 }
-
 #arrows{
   position: relative;
   top: -300px;
 }
-
 .left{
   float: left;
   font-size: 6rem;
 }
-
 .rigth{
   float: right;
   font-size: 6rem;
@@ -123,7 +86,6 @@ nav{
 .left , .rigth , .circle{
     cursor: pointer;
 }
-
 .contentMain{
   display: inline-block;
   width: auto;
@@ -139,18 +101,15 @@ nav{
   -ms-transform:translate(-50%,0%);
   width: 100%;
 }
-
 .contentMain:after,.contentMain:before{
   content:"";
   display:table;
   clear:both;
 }
-
 .slideShow{
   color:#000!important;
   background-color:#fff!important;
 }
-
 #dots{
   position: absolute;
   background-color: red;
@@ -159,15 +118,12 @@ nav{
   right: 650px;
   bottom: 40px;
 }
-
 /*Gallery*/
 #gallery{
   width: 100%;
-  border:1px solid green;
   height: 1000px;
   text-align: center;
 }
-
 #boxproducto{
   width: 90%;
   height: 380px;
@@ -175,7 +131,6 @@ nav{
   position: absolute;
   left: 80px;
 }
-
 .contentImage{
   position: relative;
   width: 250px;
@@ -187,7 +142,6 @@ nav{
   cursor: pointer;
   margin-bottom: 40px;
 }
-
 .contentImage:hover{
   -webkit-box-shadow: -2px -2px 32px -1px rgba(158,158,158,1);
   -moz-box-shadow: -2px -2px 32px -1px rgba(158,158,158,1);
@@ -198,12 +152,10 @@ nav{
   width: 100%;
   height: 270px;
 }
-
 .p-image img{
   width: 100%;
   height: 100%;
 }
-
 .descr-product{
   width: 100%;
   height: 100px;
@@ -211,23 +163,19 @@ nav{
   font-size: 2rem;
   position: relative;
 }
-
 .star-rating{
   position: absolute;
   right: 0px;
 }
-
 .descr-product .star-rating span{
     text-decoration: none;
     color: #f9e718;
 }
-
 .descr-product .costo{
     position: absolute;
     left: 5px;
     margin-right: 50px;
 }
-
 .costo, .star-rating{
   margin-top: 10px;
 }
@@ -235,7 +183,6 @@ nav{
   text-align: left;
   margin: 5px 0 0 5px;
 }
-
 /*Contactanos*/
 #contactanos{
   position: relative;
@@ -247,7 +194,6 @@ nav{
   right: 20px;
   position: absolute;
 }
-
 /*Footer*/
 .footer {
   padding: 25px 10px 15px 10px;
@@ -294,20 +240,20 @@ nav{
   color: #000;
   margin-left: 35px;
 }
-
 /*footer metodos de pago*/
 .footer .footer-pago .f-pago {
   max-width: 240px;
   float: right;
-  padding-left: 15px;
+  margin-right: 100px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.footer .footer-pago .f-pago h2 {
-  margin-bottom: 15px;
+.footer .footer-pago .f-pago h3{
+  margin: 0;
+  margin-top: -10px;
 }
-.footer .footer-pago .f-pago ul {
+.footer .footer-pago .f-pago ul{
   text-align: left;
 }
 .footer .footer-pago .f-pago li{
@@ -328,6 +274,43 @@ nav{
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-bottom: 30px;
+}
+.container{
+  margin: auto;
+}
+.container p{
+  font-size: 1.8rem;
+  margin-top: 10px;
+}
+.container div{
+  margin-top: -30px;
+  margin-bottom: 0px;
+}
+
+.social{
+  list-style: none;
+}
+
+.social li{
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.social li:hover {
+  transform: scale(1.15) rotate(360deg);
+  -webkit-transform: scale(1.1) rotate(360deg);
+  -moz-transform: scale(1.1) rotate(360deg);
+  -ms-transform: scale(1.1) rotate(360deg);
+  -o-transform: scale(1.1) rotate(360deg);
+}
+.social li a {
+  text-decoration:none;
+}
+.social li a i {
+  font-size: 5rem;
+  margin-left: -7px;
+  margin-top: -8px;
+  color: #CB4480 !important;
 }
 /*FINISH*/
 
