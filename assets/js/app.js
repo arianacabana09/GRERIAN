@@ -14,15 +14,15 @@ function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("slide");
   var dots = document.getElementsByClassName("dot");
-  if (n > x.length) {slideIndex = 1}    
+  if (n > x.length) {slideIndex = 1}
   if (n < 1) {slideIndex = x.length}
   for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
+     x[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
      dots[i].className = dots[i].className.replace(" slideShow", "");
   }
-  x[slideIndex-1].style.display = "block";  
+  x[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " slideShow";
 }
 
@@ -34,6 +34,8 @@ function showDivs(n) {
          mapTypeId:google.maps.MapTypeId.ROADMAP
         };
     var map = new google.maps.Map(document.getElementById("map"),mapOption);
- 
+
  }
 google.maps.event.addDomListener(window, 'load', init);
+
+// Validacion de formulario

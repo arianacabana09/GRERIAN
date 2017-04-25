@@ -24,17 +24,17 @@
     </div>
     <nav id="items">
       <ul>
-        <li class="item-opcion"><a href="#portada" class="link-item">Inicio</a></li>
-        <li class="item-opcion"><a href="#somos" class="link-item">Quiénes Somos</a></li>
-        <li class="item-opcion"><a href="#" class="link-item">Ropa</a></li>
+        <li class="item-opcion"><a href="index.html" class="link-item">Inicio</a></li>
+        <li class="item-opcion"><a href="#portada" class="link-item">Quiénes Somos</a></li>
+        <li class="item-opcion"><a href="#gallery" class="link-item">Ropa</a></li>
         <li class="item-opcion"><a href="#contactanos" class="link-item">Contáctanos</a></li>
       </ul>
     </nav>
   </header>
   <section id="portada">
     <div class="contentSlide">
-      <img src="assets/catalogo/compra.jpg" class="slide">
       <img src="assets/catalogo/ropamujer.jpg" class="slide">
+      <img src="assets/catalogo/compra.jpg" class="slide">
       <img src="assets/catalogo/verano.jpg" class="slide">
 
       <div class="contentMain">
@@ -186,34 +186,40 @@
 
     </div>
   </section>
+
   <section id="contactanos">
     <div class="container-form">
-      <form class="form-contact">
-        <h2 id="text-form">
-          GRERIAN
-        </h2>
-        <div class="name-contact">
-          <input type="text" id="name" class="form-contact" placeholder="Ingrese su nombre">
+      <h2 id="text-form">
+        Contáctanos
+      </h2>
+      <p id="content-form">GRERIAN esta cerca de ti, en donde te encuentres y a la hora que lo necesites. Con gusto atenderemos tus dudas, comentarios y te brindaremos el servicio que requieres.</p>
+      <form class="formulario">
+        <div>
+          <input type="text" id="name" class="box-contact" placeholder="Ingrese su nombre">
           <span id="msja"></span>
         </div>
-        <div class="lastname-contact">
-          <input type="text" id="lastname" class="form-contact" placeholder="Ingrese su apellido">
+        <div>
+          <input type="text" id="lastname" class="box-contact" placeholder="Ingrese su apellido">
           <span id="msjb"></span>
         </div>
-        <div class="email-contact">
-          <input type="email" id="input-email" class="form-contact" placeholder="Ingrese su correo electrónico">
+        <div>
+          <input type="email" id="input-email" class="box-contact" placeholder="Ingrese su correo electrónico">
           <span id="msjc"></span>
         </div>
-        <div class="input-group">
-          <div class="input-group-addon">@</div>
-          <input type="text" id="input-social" class="form-contact" placeholder="Facebook">
+        <div>
+          <input type="number" id="telefono" class="box-contact" placeholder="Ingrese su telefono">
+          <span id="msjd"></span>
         </div>
-        <div class="checkbox">
+        <div class="box-contact">
+          <div id="social" class="box-social">@</div>
+          <input type="text" id="input-social" class="box-social" placeholder="Facebook">
+        </div>
+        <div>
           <label><input type="checkbox" value="remember-me">
             <span>Deseo recibir información vía email</span>
           </label>
         </div>
-        <button class="btn btn-lg btn-primary" type="submit">Enviar información</button>
+        <button class="btn" type="submit">Enviar información</button>
         <br>
         <div id="msj"></div>
       </form>
@@ -222,7 +228,7 @@
   </section>
   <footer class="footer">
     <section class="footer-pago">
-    <div class="f-cnt-menu">
+      <div class="f-cnt-menu">
       <div class="f-item">
         <h2>Sobre Grerian</h2>
         <ul>
@@ -292,7 +298,7 @@
         </ul>
       </div>
     </div>
-      <div class="f-pago">
+    <div class="f-pago">
         <h2>Métodos de pago</h2>
         <ul>
           <li>
