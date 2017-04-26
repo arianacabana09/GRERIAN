@@ -40,8 +40,8 @@ function init(){
  }
 google.maps.event.addDomListener(window, 'load', init);
 
-// Validacion de formulario
-enviar.onclick = function() {
+// validacion de formulario
+enviar.addEventListener("click", function(){
   var nombre = document.getElementById("name");
   var apellido = document.getElementById("lastname");
   var correo = document.getElementById("input-email");
@@ -131,4 +131,4 @@ enviar.onclick = function() {
       msje.innerText = "Gracias por su visita :)";
     }
   }
-}
+});
