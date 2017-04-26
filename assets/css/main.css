@@ -19,13 +19,44 @@ body{
 
 #singin a{
   text-decoration: none;
-  color: #CB4480;
+  color: rgb(134, 27, 40);
   font-weight: bold;
 }
 
 #singin a:hover{
   color: white;
 }
+
+.shop{
+  position: absolute;
+  right: 140px;
+  top: 5px;
+  padding: 5px 5px;
+}
+
+.icon-cart{
+  font-size: 21px;
+  color: rgb(0, 0, 0);
+}
+
+.icon-cart:hover{
+  color: rgb(182, 25, 72);
+}
+
+#unit{
+  width: 60px;
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid rgb(134, 27, 40);
+  color: rgb(217, 36, 58);
+  text-align: center;
+  font-weight: bolder;
+  margin-left: 5px;
+  padding: 5px;
+}
+
+
+
 /**/
 #view{
   background-color: #F3CCA0;
