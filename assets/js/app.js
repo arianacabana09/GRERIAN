@@ -19,7 +19,7 @@ close.addEventListener("click",function(){
 
 //GalleryOptions
 var select=document.getElementById("selection");
-select.addEventListener("click", function(){
+select.addEventListener("mouseover", function(){
   if (event.target.tagName == "IMG"){
       contentImage.src = event.target.src;
     }
