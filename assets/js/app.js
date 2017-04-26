@@ -64,13 +64,13 @@ enviar.onclick = function() {
     var msg = document.getElementById("msja");
     if (nombre.value.length < 3 || crtCantidad.test(nombre.value)){
       msg.innerText = "Tiene que ingresar su nombre";
-      return nombre.focus();
+      msg.style.display = "inline-block";
     } else if (crtNumero.test(nombre.value) || !(letras.test(nombre.value))){
       msg.innerText = "Solo se permiten letras";
-      return nombre.focus();
+      msg.style.display = "inline-block";
     } else if (!(/[^a-z]+([a-z]{1,})/.test(nombre.value))){
       msg.innerText = "Su nombre debe empezar con mayúscula";
-      return nombre.focus();
+      msg.style.display = "inline-block";
     } else{
       msg.innerText = "";
       msg.style.display = "none";
@@ -83,13 +83,13 @@ enviar.onclick = function() {
     var msg = document.getElementById("msjb");
     if (apellido.value.length < 3 || crtCantidad.test(apellido.value)){
       msg.innerText = "Tiene que ingresar su apellido";
-      return apellido.focus();
+      msg.style.display = "inline-block";
     } else if (crtNumero.test(apellido.value) || !(letras.test(apellido.value))){
       msg.innerText = "Solo se permite letras";
-      return apellido.focus();
+      msg.style.display = "inline-block";
     } else if (!(/[^a-z]+([a-z]{1,})/.test(apellido.value))){
       msg.innerText = "Su apellido debe empezar con mayúscula";
-      return apellido.focus();
+      msg.style.display = "inline-block";
     } else{
       msg.innerText = ""
       msg.style.display = "none";
@@ -105,10 +105,10 @@ enviar.onclick = function() {
 
     if (!crt.test(correo.value) && correo.value.length < 10){
       msg.innerText = "Ingrese el formato correcto del correo";
-      return correo.focus();
+      msg.style.display = "inline-block";
     } else if (!(crt2.test(correo.value))){
       msg.innerText = "Correo no válido \n ej: abcd@lab.co";
-      return correo.focus();
+      msg.style.display = "inline-block";
     } else{
       msg.innerText = ""
       msg.style.display = "none";
@@ -123,7 +123,7 @@ enviar.onclick = function() {
 
     if (isNaN(phone.value) || !expresion.test(phone.value)){
       msg.innerText = "Debe ingresar un número con el formato correcto \n ej: 987654321";
-      return phone.focus();
+      msg.style.display = "inline-block";
     } else{
       msg.innerText = "";
       msg.style.display = "none";
