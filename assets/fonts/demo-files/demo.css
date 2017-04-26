@@ -147,9 +147,19 @@ p {
   font-size: 16px;
 }
 .fs1 {
+<<<<<<< HEAD
   font-size: 32px;
 }
 .fs2 {
   font-size: 48px;
+=======
+  font-size: 20px;
+}
+.fs2 {
+  font-size: 32px;
+}
+.fs3 {
+  font-size: 32px;
+>>>>>>> modelGallery
 }
 

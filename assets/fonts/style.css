@@ -1,10 +1,18 @@
 @font-face {
   font-family: 'icomoon';
+<<<<<<< HEAD
   src:  url('fonts/icomoon.eot?szmvep');
   src:  url('fonts/icomoon.eot?szmvep#iefix') format('embedded-opentype'),
     url('fonts/icomoon.ttf?szmvep') format('truetype'),
     url('fonts/icomoon.woff?szmvep') format('woff'),
     url('fonts/icomoon.svg?szmvep#icomoon') format('svg');
+=======
+  src:  url('fonts/icomoon.eot?eywyn8');
+  src:  url('fonts/icomoon.eot?eywyn8#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?eywyn8') format('truetype'),
+    url('fonts/icomoon.woff?eywyn8') format('woff'),
+    url('fonts/icomoon.svg?eywyn8#icomoon') format('svg');
+>>>>>>> modelGallery
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +32,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+<<<<<<< HEAD
 .icon-mark-github:before {
   content: "\f00a";
 }
@@ -44,5 +53,36 @@
 }
 .icon-search:before {
   content: "\e900";
+=======
+.icon-youtube-with-circle:before {
+  content: "\e900";
+}
+.icon-facebook-with-circle:before {
+  content: "\e901";
+}
+.icon-twitter-with-circle:before {
+  content: "\e902";
+}
+.icon-facebook-with-circle2:before {
+  content: "\e903";
+}
+.icon-heart:before {
+  content: "\23";
+}
+.icon-user:before {
+  content: "\e971";
+}
+.icon-lock:before {
+  content: "\e98f";
+}
+.icon-circle-right:before {
+  content: "\ea42";
+}
+.icon-circle-left:before {
+  content: "\ea44";
+}
+.icon-mail4:before {
+  content: "\ea86";
+>>>>>>> modelGallery
 }
 
