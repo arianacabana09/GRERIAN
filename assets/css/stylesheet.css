@@ -1,0 +1,35 @@
+.sprite {
+    background-image: url(../img/iconsPago.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-ft-pago1 {
+    width: 61px;
+    height: 38px;
+    background-position: -5px -5px;
+}
+
+.sprite-ft-pago2 {
+    width: 142px;
+    height: 57px;
+    background-position: -5px -53px;
+}
+
+.sprite-ft-pago3 {
+    width: 61px;
+    height: 38px;
+    background-position: -76px -5px;
+}
+
+.sprite-ft-pago4 {
+    width: 61px;
+    height: 38px;
+    background-position: -147px -5px;
+}
+
+.sprite-ft-pago5 {
+    width: 61px;
+    height: 38px;
+    background-position: -157px -53px;
+}
