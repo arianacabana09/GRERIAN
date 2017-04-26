@@ -13,6 +13,7 @@
 		el.innerHTML = '<span style="font-family: \'icomoon\'">' + entity + '</span>' + html;
 	}
 	var icons = {
+<<<<<<< HEAD
 		'icon-mark-github': '&#xf00a;',
 		'icon-share2': '&#xea82;',
 		'icon-instagram': '&#xea92;',
@@ -20,6 +21,9 @@
 		'icon-youtube': '&#xea9d;',
 		'icon-facebook': '&#xe901;',
 		'icon-search': '&#xe900;',
+=======
+		'icon-cart': '&#xe93a;',
+>>>>>>> contacto
 		'0': 0
 		},
 		els = document.getElementsByTagName('*'),

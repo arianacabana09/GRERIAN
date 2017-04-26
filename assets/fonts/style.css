@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'icomoon';
 <<<<<<< HEAD
+<<<<<<< HEAD
   src:  url('fonts/icomoon.eot?szmvep');
   src:  url('fonts/icomoon.eot?szmvep#iefix') format('embedded-opentype'),
     url('fonts/icomoon.ttf?szmvep') format('truetype'),
@@ -13,6 +14,13 @@
     url('fonts/icomoon.woff?eywyn8') format('woff'),
     url('fonts/icomoon.svg?eywyn8#icomoon') format('svg');
 >>>>>>> modelGallery
+=======
+  src:  url('fonts/icomoon.eot?5ap5po');
+  src:  url('fonts/icomoon.eot?5ap5po#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?5ap5po') format('truetype'),
+    url('fonts/icomoon.woff?5ap5po') format('woff'),
+    url('fonts/icomoon.svg?5ap5po#icomoon') format('svg');
+>>>>>>> contacto
   font-weight: normal;
   font-style: normal;
 }
@@ -32,6 +40,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 .icon-mark-github:before {
   content: "\f00a";
@@ -84,5 +93,9 @@
 .icon-mail4:before {
   content: "\ea86";
 >>>>>>> modelGallery
+=======
+.icon-cart:before {
+  content: "\e93a";
+>>>>>>> contacto
 }
 
