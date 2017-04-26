@@ -1,31 +1,5 @@
+
 window.addEventListener("load" , function(e){
-  var slideIndex = 1;
-  showDivs(slideIndex);
-
-  function plusDivs(n) {
-    showDivs(slideIndex += n);
-  }
-
-  function currentDiv(n) {
-    showDivs(slideIndex = n);
-  }
-
-function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("slide");
-    var dots = document.getElementsByClassName("dot");
-    if (n > x.length) {slideIndex = 1}    
-    if (n < 1) {slideIndex = x.length}
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    for (i = 0; i < dots.length; i++) {
-       dots[i].className = dots[i].className.replace(" slideShow", "");
-    }
-    x[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " slideShow";
-  }
-
 /*MODAL GALLERY*/
 var modal=document.getElementById("modal");/*Modal fondo*/
 var close=document.getElementById("close");/*Button Close*/
@@ -43,6 +17,13 @@ close.addEventListener("click",function(){
   modal.style.display = "none";
 });
 
+//GalleryOptions
+var select=document.getElementById("selection");
+select.addEventListener("click", function(){
+  if (event.target.tagName == "IMG"){
+      contentImage.src = event.target.src;
+    }
+});
 // Validacion de formulario
 enviar.onclick = function() {
     var nombre = document.getElementById("name");
@@ -128,10 +109,7 @@ enviar.onclick = function() {
     }
   }
 
-//GoogleMaps Api
-
-
-  //Gallery Image Dinamico
+//Gallery Image Dinamico
   function loadGallery (){
     var productos=[{nombre:"Cremallera básica moda otoño 2017 Simplee",precio:"S/ 40.00",st:"&#9733; &#9733; &#9733; &#9733;"},
                    {nombre:"Cremallera básica moda Invierno Simplee",precio:"S/ 80.00",st:"&#9733; &#9733; &#9733;"},
@@ -172,6 +150,7 @@ enviar.onclick = function() {
     }
   }
   loadGallery();
+
 });
 
 function init(){
@@ -181,6 +160,34 @@ function init(){
          mapTypeId:google.maps.MapTypeId.ROADMAP
         };
     var map = new google.maps.Map(document.getElementById("map"),mapOption);
- 
  }
 google.maps.event.addDomListener(window, 'load', init);
+
+window.load = function(){}
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function currentDiv(n) {
+    showDivs(slideIndex = n);
+  }
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("slide");
+    var dots = document.getElementsByClassName("dot");
+    if (n > x.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+       dots[i].className = dots[i].className.replace(" slideShow", "");
+    }
+    x[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " slideShow";
+}
+

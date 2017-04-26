@@ -286,7 +286,7 @@ nav{
 }
 /*MODAL*/
 #modal{
- background-color: rgba(210, 20, 75, 0.6);
+ background-color: rgba(255, 123, 108, 0.4);
  position: fixed;
  top: 0;
  left: 0;
@@ -299,28 +299,144 @@ nav{
 }
 
 #close{
-  color: rgba(15, 200, 110, 1);
+  color: black;
   font-size: 30px;
   background: none;
   border: none;
   cursor: pointer;
   position: absolute;
-  margin-left: 640px;
+  right: 0px;
 }
 
 #content-image {
+  background-color: white;
   border: 10px white solid;
-  width: 500px;
-  height: 600px;
-  margin: auto;
-  margin-top: 20px;
+  width: 900px;
+  height: 500px;
+  margin-top: 100px;
   position: relative;
   box-sizing: border-box;
 }
 
+#pr-img{
+ position: absolute;
+ left:110px;
+ width: 380px;
+ height: 470px;
+}
+
 #content-image img{
+    width: 100%;
+    height: 100%;
+}
+
+#selection{
+  position: absolute;
+  width: 100px;
+  height: 500px;
+}
+.mod-image{
+  width: 80px;
+  height: 80px; 
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.mod-image img{
   width: 100%;
   height: 100%;
+  border: 2px solid silver;
+}
+
+#info-img{
+  text-align: justify;
+  right: 30px;
+  position: absolute;
+  width: 330px;
+}
+#info-img span{
+  text-decoration: none;
+    color: #f9e718;
+}
+/*Count Input*/
+.count-input {
+  position: relative;
+  width: 100%;
+  max-width: 165px;
+  margin: 10px 0;
+}
+.count-input input {
+  width: 100%;
+  height: 36.92307692px;
+  border: 1px solid silver;
+  border-radius: 2px;
+  background: none;
+  text-align: center;
+}
+.count-input input:focus {
+  outline: none;
+}
+.count-input .incr-btn {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  font-size: 26px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 30px;
+  top: 50%;
+  right: 0;
+  margin-top: -15px;
+  cursor: pointer;
+  text-decoration:none;
+}
+.count-input .incr-btn:first-child {
+  right: auto;
+  left: 0;
+  top: 46%;
+}
+.count-input.count-input-sm {
+  max-width: 125px;
+}
+.count-input.count-input-sm input {
+  height: 36px;
+}
+.count-input.count-input-lg {
+  max-width: 200px;
+}
+.count-input.count-input-lg input {
+  height: 70px;
+  border-radius: 3px;
+}
+#buttons {
+  width: 100%;
+  position: relative;
+}
+#addCompra,#addCesta{
+  top: 20px;
+  position: absolute;
+  background-color: #F1845F;
+  display: inline-block;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+}
+#addCesta{
+  right: 0;
+}
+#addCompra:hover,#addCesta:hover{
+  border:2px solid white;
+  background-color: #D78ED0;
+  color: black;
+}
+.co-btn{
+  border: none;
+  padding:20px;
+  margin-left: 10px;
+}
+.co-btn:hover{
+  border: 2px red solid;
 }
 /*Footer*/
 .footer {
@@ -440,6 +556,8 @@ nav{
   margin-top: -8px;
   color: #CB4480 !important;
 }
+
+
 /*FINISH*/
 
 
